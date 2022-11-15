@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: #0eb947;
+}
+
+.slider {
+  position: relative;
+  margin: 20px auto;
+  max-width: 75%;
+  background-color: #2a3780;
+}
+
+.next {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  top: 50%;
+  right: -55px;
+  background: url(../img/jwalden-Purple-arrow-shape.svg) no-repeat;
+  background-color: #0eb947;
+}
+
+@media (max-width: 720.98px) {
+  .next {
+    width: 40px;
+    height: 30px;
+    right: -50px;
+  }
+}
+
+@media (max-width: 520.98px) {
+  .next {
+    width: 30px;
+    height: 20px;
+    right: -40px;
+  }
+}
+
+.next:active,
+.prev:active {
+  top: 51%;
+}
+
+img {
+  width: 100%;
+}
+
+.prev {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  top: 50%;
+  left: -55px;
+  background: url(../img/jwalden-Purple-arrow-shape.svg) no-repeat;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-color: #0eb947;
+}
+
+@media (max-width: 720.98px) {
+  .prev {
+    width: 40px;
+    height: 30px;
+    left: -50px;
+  }
+}
+
+@media (max-width: 520.98px) {
+  .prev {
+    width: 30px;
+    height: 20px;
+    left: -40px;
+  }
+}
+
+.hiden {
+  display: none;
+}
